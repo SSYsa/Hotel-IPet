@@ -47,6 +47,7 @@ public class Cuidadores extends JFrame {
 	JRadioButton gato = new JRadioButton("Gato");
 	JRadioButton cachorro = new JRadioButton("Cachorro");
 	private String tipo;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -291,11 +292,17 @@ public class Cuidadores extends JFrame {
 		txtObs = new JTextField();
 		txtObs.setBounds(139, 280, 205, 20);
 		contentPane.add(txtObs);
+	
 		txtObs.setColumns(10);
 
 		JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon(Cuidadores.class.getResource("/imagens/Background.jpg")));
 		background.setBounds(0, 0, 644, 401);
 		contentPane.add(background);
+		
+		textField = new JTextField();
+		textField.setBounds(74, 11, -31, 9);
+		contentPane.add(textField);
+		textField.setColumns(10);
 	}
 }
